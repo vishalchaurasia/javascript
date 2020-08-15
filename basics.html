@@ -1,0 +1,112 @@
+<script> 
+console.log("hello world")
+var sum=10+20;      //operations
+console.log(sum)
+var myVar=87;
+myVar++;            //incrementing
+console.log(myVar)
+var product=2.00*2.50;
+console.log(product)
+
+var firstname="Vishal\t";
+var lastname="Chaurasia";
+console.log(firstname,lastname)
+
+var myStr="Firstline "+"Lastline"   //concatenate
+console.log(myStr)
+
+var firstnamelength=0;
+var firstname="Vishal";
+firstnamelength=firstname.length;
+console.log(firstnamelength)
+var LastLetterOfFirstName=firstname[firstname.length-1]      //finding_last_letter_of_string
+console.log(LastLetterOfFirstName)
+
+//WORD BLANKS
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb)
+{
+    var result="";
+    result+="The "+ myAdjective + myNoun + myVerb +"to the store "+ myAdverb;
+    return result;
+}
+console.log(wordBlanks("dog ", "big ", "ran ", "quickly."));
+console.log(wordBlanks("bike ", "slow ", "flew ", "slowly."));
+
+var ourArray=[50,60,70];
+var ourData=ourArray[0];
+console.log(ourData);
+
+var myArray=[1,2,3,4,5];
+myArray.push([6,"VishalChaurasia"]);
+console.log(myArray);
+
+var thisArray=["Chaurasia","20"];
+thisArray.shift();             //shifts index 0
+thisArray.unshift("Vishal")
+console.log(thisArray);
+
+function reusableFunction(){
+    console.log("Hi World");
+}
+reusableFunction();                 //calling function
+
+function timesFive(num){
+    return num*5;
+}
+console.log(timesFive(6));
+
+function Booleans(){
+    return true;
+}
+
+function testEqual(val){
+    if(val==12){                    //conditional statements
+        return "Equal";
+    }
+    return "Not Equal";
+}
+console.log(testEqual(10));
+
+function testLogical(val){
+    if( val <= 50 && val >= 25 ){                    //logical statements
+        return "YES";
+    }
+    return "NO";
+console.log(testLogical(46));
+}
+
+
+function caseSwitch(val){
+    var answer = "";               //switch statements
+    switch (val)
+    {
+        case 1: 
+        answer="alpha";
+        break;
+        case 2: 
+        answer="beta";
+        break;
+        case 3: 
+        answer="gamma";
+        break;
+        case 4: 
+        answer="delta";
+        break;
+    }
+        return answer;
+}
+console.log(caseSwitch(2));
+
+
+//object
+var testobj={
+    "name":"Vishalchaurasia",
+    "rollno":"null",
+    "location":"Deoria"
+};
+testobj.name="VISHAL CHAURASIA"        //updating
+var Name=testobj["name"]
+var Location=testobj.location;
+console.log(Name);
+console.log(Location);
+</script>
